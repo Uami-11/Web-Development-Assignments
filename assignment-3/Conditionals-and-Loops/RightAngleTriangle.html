@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Make a right angle triangle</title>
+    <script src="Triangle.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Make a Right Angled Triangle</title>
 </head>
 <body>
+    <div class="title">
+        <h1>Make a Right Angled Triangle</h1>
+    </div>
+    <label for="number-input">Enter a height for the triangle</label>
+    <input id="number-input" type="number" autocomplete="off" min="1">
+    <button onclick="GenerateTriangle()">Enter</button>
     
+    <div class="result"></div>
+
 </body>
 </html>

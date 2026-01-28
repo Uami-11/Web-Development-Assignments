@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+    <script src="OddEven.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Odd or Even Checker</title>
 </head>
 <body>
     <div class="title">
         <h1>Is your number odd or even?!</h1>
-        <img alt="image of thinking cat" width="50" src="https://render.fineartamerica.com/images/rendered/default/flat/puzzle/images/artworkimages/medium/2/thinking-cat-douglas-sacha.jpg?&targetx=-62&targety=0&imagewidth=1125&imageheight=750&modelwidth=1000&modelheight=750&backgroundcolor=FFFFFF&orientation=0&producttype=puzzle-18-24&brightness=765&v=6">
+        <img alt="image of thinking cat" width="100" src="https://render.fineartamerica.com/images/rendered/default/flat/puzzle/images/artworkimages/medium/2/thinking-cat-douglas-sacha.jpg?&targetx=-62&targety=0&imagewidth=1125&imageheight=750&modelwidth=1000&modelheight=750&backgroundcolor=FFFFFF&orientation=0&producttype=puzzle-18-24&brightness=765&v=6">
     </div>
     <label for="number-input">Enter a number</label>
     <input id="number-input" type="number" autocomplete="off">
     <button onclick="CheckOddEveness()">Enter</button>
+    
+    <h2 class="result"></h2>
+    <img id="result-image">
+    <p id="result-image-description"></p>
 
 </body>
 </html>
