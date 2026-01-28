@@ -1,0 +1,216 @@
+body 
+{
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-top: 70px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6
+{
+    color: darkred;
+}
+
+/* Paragraphs */
+p{
+    font-size: 16px;
+    color: #333;
+}
+
+/* Class selector */
+.intro
+{
+    text-align: center;
+}
+
+/* Box model example (D) */
+.box-model
+{
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 15px;
+    box-sizing: border-box;
+    background-color: #ffe4c4;
+}
+
+/* Lists */
+.list
+{
+    font-weight: bold;
+    width: 200px;
+    background-color: pink;
+}
+
+/* ID selector */
+#redirect
+{
+    color: maroon;
+}
+
+/* Existing IDs */
+#hobbies
+{
+    border: 1px solid black;
+}
+
+#foods
+{
+    border: 2px dotted black;
+}
+
+#end
+{
+    color: darkslateblue;
+}
+
+/* Navbar (G1: fixed) */
+.navbar
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: darkred;
+    color: white;
+    padding: 15px;
+    z-index: 1000;
+}
+
+/* Main content (G2: relative) */
+.main-content
+{
+    position: relative;
+    padding: 20px;
+}
+
+/* Absolute box (G3) */
+.important-box
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: gold;
+    padding: 10px;
+    border: 1px solid black;
+    z-index: 2;
+}
+
+.sticky-heading
+{
+    position: sticky;
+    top: 80px;
+    background-color: bisque;
+    padding: 5px;
+    z-index: 1;
+}
+
+
+/* Span styling (E) */
+.highlight
+{
+    color: darkblue;
+    font-weight: bold;
+}
+
+.blank
+{
+    height: 200px;
+}
+
+.hobbies-section
+{
+    position: relative;
+}
+
+.navbar a
+{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar a:hover
+{
+    text-decoration: underline;
+}
+
+/* ========== FLEXBOX GALLERY STYLES ========== */
+.photos-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.photos-flex img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photos-flex img:hover {
+    transform: scale(1.05);
+}
+
+/* ========== GRID GALLERY STYLES ========== */
+.photos-grid {
+    display: grid;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.photos-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photos-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Mobile: ≤ 768px - 1 image per row */
+@media (max-width: 768px) {
+    .photos-flex img {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .photos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet: 769px - 1024px - 2 images per row */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .photos-flex img {
+        flex: 1 1 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+    }
+    
+    .photos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop: > 1024px - 4 images per row */
+@media (min-width: 1025px) {
+    .photos-flex img {
+        flex: 1 1 calc(25% - 15px);
+        max-width: calc(25% - 15px);
+    }
+    
+    .photos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

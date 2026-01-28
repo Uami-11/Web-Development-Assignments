@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Feedback Form for My Webpage</h1>
+    
+    <form>
+
+        <label for="fname">Full Name</label>
+        <input id="fname" name="fname" type="text" autocomplete="off" autofocus required placeholder="Vegito Blue">
+        <br> <br>
+        
+        <label for="emailad">Email Address</label>
+        <input id="emailad" name="email" type="email" required placeholder="vegito_blue@gmail.com">
+        <br> <br>
+        
+        <label for="neutral">Rate My Webpage</label>
+        <br>
+
+        <label for="verysatisfied">Very Satisfied</label>
+        <input value="verysatisfied" id="verysatisfied" name="rating" type="radio" required>
+
+        <label for="satisfied">Satisfied</label>
+        <input id="satisfied" value="satisfied" name="rating" type="radio">
+
+        <label for="neutral">Neutral</label>
+        <input id="neutral" name="rating" type="radio" value="neutral"> 
+        
+        <label for="unsatisfied">Unsatisfied</label>
+        <input id="unsatisfied" name="rating" type="radio" value="unsatisfied"> 
+        <br><br>
+        
+        <label>What are your interests?</label>
+        <br>
+
+        <label for="webdev">Web Development</label>
+        <input id="webdev" name="interests" type="checkbox" value="webdev">
+
+        <label for="mobdev">Mobile Development</label>
+        <input id="mobdev" name="interests" type="checkbox" value="mobdev">
+
+        <label for="ai">AI & Machine Learning</label>
+        <input id="ai" name="interests" type="checkbox" value="ai">
+        <br><br>
+        
+        <label for="country">Which Country are you from?</label>
+        <br>
+
+        <select required name="country" id="country">
+            <option value="" disabled selected>Select Country</option>
+            <option value="nepal">Nepal</option>
+            <option value="norway">Norway</option>
+            <option value="usa">USA</option>
+            <option value="china">China</option> 
+        </select>
+        <br><br>
+
+        <label for="feedback">Write your feedback here</label>
+        <br>
+        <textarea required id="feedback" name="feedback" rows="5" placeholder="Your feedbackform needs more options 😭😭"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+    
+</body>
+</html>
