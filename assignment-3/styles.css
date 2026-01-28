@@ -1,0 +1,5 @@
+.title {
+    display: flex;
+    align-items: center; /* vertically align image with text */
+    gap: 10px;           /* space between h1 and image */
+}
