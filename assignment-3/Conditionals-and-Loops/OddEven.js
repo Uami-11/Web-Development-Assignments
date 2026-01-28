@@ -12,11 +12,11 @@ function CheckOddEveness() {
     }
 
     if (num % 2 === 0) {
-        result.textContent = "It"s Even";
+        result.textContent = "It's Even";
         image.setAttribute("src", "https://balatrowiki.org/images/Even_Steven.png?2595d");
         descriptor.textContent = "*Even Steven from Balatro";
     } else {
-        result.textContent = "It"s Odd";
+        result.textContent = "It's Odd";
         image.setAttribute("src", "https://preview.redd.it/are-odd-todd-and-even-steven-brothers-v0-tm769yzgxo1e1.jpg?width=194&format=pjpg&auto=webp&s=ffe7cf51a0a03e49abdb3c5564ddad13b0f4be4d");
         descriptor.textContent = "*Odd Todd from Balatro"
     }
