@@ -10,3 +10,8 @@
     font-size: large;
 }
 
+body {
+    transform: scale(1.5);
+    transform-origin: 0 0;
+    overflow-x: hidden; 
+}

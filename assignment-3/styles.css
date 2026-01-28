@@ -32,9 +32,7 @@ body {
 
 /* Sections */
 .section {
-    background-color: #fff8ef;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 5px;
 }
 
 .section-title {
