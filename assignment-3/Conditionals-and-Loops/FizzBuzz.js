@@ -1,3 +1,5 @@
+const generate = document.getElementById("gen-btn");
+
 function FizzBuzz() {
     const resultDiv = document.querySelector("div.result");
     
@@ -27,3 +29,9 @@ function FizzBuzz() {
         resultDiv.appendChild(line);
     }
 }
+
+
+document.addEventListener("keydown", function(event)
+{
+    if (event.key == "Enter") generate.click();
+})

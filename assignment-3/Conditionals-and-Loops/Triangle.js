@@ -1,5 +1,6 @@
+const input = document.getElementById("number-input");
+
 function GenerateTriangle() {
-    const input = document.getElementById("number-input");
     const height = input.value;
     
     const resultDiv = document.querySelector(".result");
@@ -28,3 +29,15 @@ function GenerateTriangle() {
     resultDiv.style.lineHeight = "1.2";
     resultDiv.style.whiteSpace = "pre";
 }
+
+
+
+input.addEventListener("keydown", function(event){ 
+    if (event.key == "Enter") GenerateTriangle(); 
+    if (event.key == "Escape") input.blur(); }
+)
+
+document.addEventListener("keydown", function(event){ 
+    if (event.key == "Enter") input.focus(); 
+}
+)

@@ -22,3 +22,13 @@ function CheckOddEveness() {
         descriptor.textContent = "*Odd Todd from Balatro"
     }
 }
+
+input.addEventListener("keydown", function(event){ 
+    if (event.key == "Enter") CheckOddEveness(); 
+    if (event.key == "Escape") input.blur(); }
+)
+
+document.addEventListener("keydown", function(event){ 
+    if (event.key == "Enter") input.focus(); 
+}
+)

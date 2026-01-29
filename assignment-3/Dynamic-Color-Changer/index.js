@@ -12,3 +12,13 @@ function resetColor()
     colorPicker.value = "#000000";
     area.style.backgroundColor = "#000000";
 }
+
+colorPicker.addEventListener("keydown", function(event)
+{
+    if (event.key == "Escape") colorPicker.blur();
+})
+
+document.addEventListener("keydown", function(event)
+{
+    if (event.key == "Enter") colorPicker.focus();
+})
